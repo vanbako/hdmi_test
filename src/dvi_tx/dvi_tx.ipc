@@ -1,0 +1,14 @@
+[General]
+ipc_version=4
+file=dvi_tx
+module=dvi_tx
+target_device=gw5at60b-002
+type=dvi_tx
+version=1.0
+
+[Config]
+DISABLE_IO_INSERTION=true
+ELVDS=true
+LANG=0
+Synthesis_tool=GowinSynthesis
+TLVDS=false

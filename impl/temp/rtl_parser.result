@@ -1,0 +1,72 @@
+[
+ {
+  "InstFile" : "C:/Users/koenv/Documents/Github/gowin/hdmi_test/src/hdmi_top.v",
+  "InstLine" : 7,
+  "InstName" : "hdmi_top",
+  "ModuleFile" : "C:/Users/koenv/Documents/Github/gowin/hdmi_test/src/hdmi_top.v",
+  "ModuleLine" : 7,
+  "ModuleName" : "hdmi_top",
+  "SubInsts" : [
+   {
+    "InstFile" : "C:/Users/koenv/Documents/Github/gowin/hdmi_test/src/hdmi_top.v",
+    "InstLine" : 28,
+    "InstName" : "u_pll",
+    "ModuleFile" : "C:/Users/koenv/Documents/Github/gowin/hdmi_test/src/gowin_pll/gowin_pll.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "Gowin_PLL",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/Users/koenv/Documents/Github/gowin/hdmi_test/src/gowin_pll/gowin_pll.v",
+      "InstLine" : 26,
+      "InstName" : "u_pll",
+      "ModuleFile" : "C:/Users/koenv/Documents/Github/gowin/hdmi_test/src/gowin_pll/gowin_pll_mod.v",
+      "ModuleLine" : 10,
+      "ModuleName" : "Gowin_PLL_MOD"
+     },
+     {
+      "InstFile" : "C:/Users/koenv/Documents/Github/gowin/hdmi_test/src/gowin_pll/gowin_pll.v",
+      "InstLine" : 40,
+      "InstName" : "u_pll_init",
+      "ModuleFile" : "C:/Users/koenv/Documents/Github/gowin/hdmi_test/src/pll_init.v",
+      "ModuleLine" : 4,
+      "ModuleName" : "PLL_INIT"
+     }
+    ]
+   },
+   {
+    "InstFile" : "C:/Users/koenv/Documents/Github/gowin/hdmi_test/src/hdmi_top.v",
+    "InstLine" : 54,
+    "InstName" : "u_tmg",
+    "ModuleFile" : "C:/Users/koenv/Documents/Github/gowin/hdmi_test/src/hdmi_top.v",
+    "ModuleLine" : 98,
+    "ModuleName" : "timing_720p"
+   },
+   {
+    "InstFile" : "C:/Users/koenv/Documents/Github/gowin/hdmi_test/src/hdmi_top.v",
+    "InstLine" : 65,
+    "InstName" : "u_pat",
+    "ModuleFile" : "C:/Users/koenv/Documents/Github/gowin/hdmi_test/src/hdmi_top.v",
+    "ModuleLine" : 153,
+    "ModuleName" : "test_pattern_bars"
+   },
+   {
+    "InstFile" : "C:/Users/koenv/Documents/Github/gowin/hdmi_test/src/hdmi_top.v",
+    "InstLine" : 79,
+    "InstName" : "u_dvi",
+    "ModuleFile" : "C:/Users/koenv/Documents/Github/gowin/hdmi_test/src/dvi_tx/dvi_tx.v",
+    "ModuleLine" : 1090,
+    "ModuleName" : "dvi_tx",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/Users/koenv/Documents/Github/gowin/hdmi_test/src/dvi_tx/dvi_tx.v",
+      "InstLine" : 1121,
+      "InstName" : "rgb2dvi_inst",
+      "ModuleFile" : "C:/Users/koenv/Documents/Github/gowin/hdmi_test/src/dvi_tx/dvi_tx.v",
+      "ModuleLine" : 10,
+      "ModuleName" : "~rgb2dvi.dvi_tx"
+     }
+    ]
+   }
+  ]
+ }
+]
