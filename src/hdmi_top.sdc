@@ -1,5 +1,5 @@
 # 27 MHz board clock
-create_clock -name clk27 -period 37.037 [get_ports {clk_27m}]
+create_clock -name clk27 -period 37.037 [get_ports {sys_clk}]
 
 # Pixel clock ~74.25 MHz defined on TMDS TX input pin
 # create_clock -name pixclk -period 13.468 [get_pins {u_dvi/I_rgb_clk}]
@@ -10,4 +10,4 @@ create_clock -name pixclk -period 13.468 [get_nets {clk_pix}]
 create_clock -name tmds5x -period 2.6936 [get_nets {clk_serial}]
 
 # Optional: ignore async reset for timing
-set_false_path -from [get_ports {rst_n}]
+set_false_path -from [get_ports {sys_rst_n}]

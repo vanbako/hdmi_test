@@ -5,13 +5,14 @@
 `timescale 1ns/1ps
 
 module hdmi_top (
-    input  wire clk_27m,        // Board oscillator, default 27.000 MHz
-    input  wire rst_n,          // Active-low reset
+    input  wire sys_clk,        // Board oscillator, default 27.000 MHz
+    input  wire sys_rst_n,      // Active-low reset
 
-    output wire O_tmds_clk_p,
-    output wire O_tmds_clk_n,
-    output wire [2:0] O_tmds_data_p,
-    output wire [2:0] O_tmds_data_n
+    // Tang Mega 60K pins file expects these names
+    output wire tmds_clk_p_0,
+    output wire tmds_clk_n_0,
+    output wire [2:0] tmds_d_p_0,
+    output wire [2:0] tmds_d_n_0
 );
 
     // --------------------------------------------------------------------
@@ -26,12 +27,12 @@ module hdmi_top (
     // - clkout1: ~74.25  MHz (pixel clock)
     // The PLL expects a management clock (mdclk) and an active-high reset.
     Gowin_PLL u_pll (
-        .clkin   (clk_27m),
+        .clkin   (sys_clk),
         .clkout0 (clk_serial),
         .clkout1 (clk_pix),
         .lock    (pll_lock),
-        .mdclk   (clk_27m),
-        .reset   (~rst_n)
+        .mdclk   (sys_clk),
+        .reset   (~sys_rst_n)
     );
 
     // --------------------------------------------------------------------
@@ -43,11 +44,11 @@ module hdmi_top (
     wire [11:0] x;
     wire [11:0] y;
 
-    // Reset sync into pixel domain (active-low rst_n and PLL lock)
+    // Reset sync into pixel domain (active-low sys_rst_n and PLL lock)
     reg [1:0] rst_sync = 2'b00;
     wire rstn_pix = rst_sync[1];
-    always @(posedge clk_pix or negedge rst_n) begin
-        if (!rst_n) rst_sync <= 2'b00;
+    always @(posedge clk_pix or negedge sys_rst_n) begin
+        if (!sys_rst_n) rst_sync <= 2'b00;
         else        rst_sync <= {rst_sync[0], pll_lock};
     end
 
@@ -86,10 +87,10 @@ module hdmi_top (
         .I_rgb_r     (r),
         .I_rgb_g     (g),
         .I_rgb_b     (b),
-        .O_tmds_clk_p(O_tmds_clk_p),
-        .O_tmds_clk_n(O_tmds_clk_n),
-        .O_tmds_data_p(O_tmds_data_p),
-        .O_tmds_data_n(O_tmds_data_n)
+        .O_tmds_clk_p(tmds_clk_p_0),
+        .O_tmds_clk_n(tmds_clk_n_0),
+        .O_tmds_data_p(tmds_d_p_0),
+        .O_tmds_data_n(tmds_d_n_0)
     );
 
 endmodule

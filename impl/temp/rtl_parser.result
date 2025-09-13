@@ -9,7 +9,7 @@
   "SubInsts" : [
    {
     "InstFile" : "C:/Users/koenv/Documents/Github/gowin/hdmi_test/src/hdmi_top.v",
-    "InstLine" : 28,
+    "InstLine" : 29,
     "InstName" : "u_pll",
     "ModuleFile" : "C:/Users/koenv/Documents/Github/gowin/hdmi_test/src/gowin_pll/gowin_pll.v",
     "ModuleLine" : 1,
@@ -35,23 +35,23 @@
    },
    {
     "InstFile" : "C:/Users/koenv/Documents/Github/gowin/hdmi_test/src/hdmi_top.v",
-    "InstLine" : 54,
+    "InstLine" : 55,
     "InstName" : "u_tmg",
     "ModuleFile" : "C:/Users/koenv/Documents/Github/gowin/hdmi_test/src/hdmi_top.v",
-    "ModuleLine" : 98,
+    "ModuleLine" : 99,
     "ModuleName" : "timing_720p"
    },
    {
     "InstFile" : "C:/Users/koenv/Documents/Github/gowin/hdmi_test/src/hdmi_top.v",
-    "InstLine" : 65,
+    "InstLine" : 66,
     "InstName" : "u_pat",
     "ModuleFile" : "C:/Users/koenv/Documents/Github/gowin/hdmi_test/src/hdmi_top.v",
-    "ModuleLine" : 153,
+    "ModuleLine" : 154,
     "ModuleName" : "test_pattern_bars"
    },
    {
     "InstFile" : "C:/Users/koenv/Documents/Github/gowin/hdmi_test/src/hdmi_top.v",
-    "InstLine" : 79,
+    "InstLine" : 80,
     "InstName" : "u_dvi",
     "ModuleFile" : "C:/Users/koenv/Documents/Github/gowin/hdmi_test/src/dvi_tx/dvi_tx.v",
     "ModuleLine" : 1090,

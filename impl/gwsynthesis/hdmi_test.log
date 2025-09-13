@@ -9,8 +9,8 @@ Compiling module 'hdmi_top'("C:\Users\koenv\Documents\Github\gowin\hdmi_test\src
 Compiling module 'Gowin_PLL'("C:\Users\koenv\Documents\Github\gowin\hdmi_test\src\gowin_pll\gowin_pll.v":1)
 Compiling module 'Gowin_PLL_MOD'("C:\Users\koenv\Documents\Github\gowin\hdmi_test\src\gowin_pll\gowin_pll_mod.v":10)
 Compiling module 'PLL_INIT(CLK_PERIOD=37,MULTI_FAC=28)'("C:\Users\koenv\Documents\Github\gowin\hdmi_test\src\pll_init.v":4)
-Compiling module 'timing_720p'("C:\Users\koenv\Documents\Github\gowin\hdmi_test\src\hdmi_top.v":98)
-Compiling module 'test_pattern_bars'("C:\Users\koenv\Documents\Github\gowin\hdmi_test\src\hdmi_top.v":153)
+Compiling module 'timing_720p'("C:\Users\koenv\Documents\Github\gowin\hdmi_test\src\hdmi_top.v":99)
+Compiling module 'test_pattern_bars'("C:\Users\koenv\Documents\Github\gowin\hdmi_test\src\hdmi_top.v":154)
 Compiling module 'dvi_tx'("C:\Users\koenv\Documents\Github\gowin\hdmi_test\src\dvi_tx\dvi_tx.v":1090)
 Compiling module '**'("C:\Users\koenv\Documents\Github\gowin\hdmi_test\src\dvi_tx\dvi_tx.v":1089)
 NOTE  (EX0101) : Current top module is "hdmi_top"

@@ -1,7 +1,7 @@
 -d C:\Users\koenv\Documents\Github\gowin\hdmi_test\impl\gwsynthesis\hdmi_test.vg
 -p GW5AT-60B-PBGA484A-1
 -pn GW5AT-LV60PG484AC1/I0
--cst C:\Users\koenv\Documents\Github\gowin\hdmi_test\src\hdmi_top.cst
+-cst C:\Users\koenv\Documents\Github\gowin\hdmi_test\src\tang_mega_60K_pins.cst
 -cfg C:\Users\koenv\Documents\Github\gowin\hdmi_test\impl\pnr\device.cfg
 -sdc C:\Users\koenv\Documents\Github\gowin\hdmi_test\src\hdmi_top.sdc
 -bit

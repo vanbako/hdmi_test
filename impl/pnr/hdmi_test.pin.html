@@ -54,7 +54,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Physical Constraints File</td>
-<td>C:\Users\koenv\Documents\Github\gowin\hdmi_test\src\hdmi_top.cst</td>
+<td>C:\Users\koenv\Documents\Github\gowin\hdmi_test\src\tang_mega_60K_pins.cst</td>
 </tr>
 <tr>
 <td class="label">Timing Constraints File</td>
@@ -78,7 +78,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Created Time</td>
-<td>Fri Sep 12 14:56:44 2025
+<td>Fri Sep 12 17:22:31 2025
 </td>
 </tr>
 <tr>
@@ -112,7 +112,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td><b>Ctle</b></td>
 </tr>
 <tr>
-<td class="label">clk_27m</td>
+<td class="label">sys_clk</td>
 <td>-</td>
 <td>V22/7</td>
 <td>Y</td>
@@ -134,7 +134,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>NONE</td>
 </tr>
 <tr>
-<td class="label">rst_n</td>
+<td class="label">sys_rst_n</td>
 <td>-</td>
 <td>AA13/9</td>
 <td>Y</td>
@@ -156,8 +156,8 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>NONE</td>
 </tr>
 <tr>
-<td class="label">O_tmds_clk_p</td>
-<td>O_tmds_clk_n</td>
+<td class="label">tmds_clk_p_0</td>
+<td>tmds_clk_n_0</td>
 <td>G15/4</td>
 <td>Y</td>
 <td>out</td>
@@ -178,8 +178,8 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>NONE</td>
 </tr>
 <tr>
-<td class="label">O_tmds_clk_n</td>
-<td>O_tmds_clk_p</td>
+<td class="label">tmds_clk_n_0</td>
+<td>tmds_clk_p_0</td>
 <td>G16/4</td>
 <td>Y</td>
 <td>out</td>
@@ -200,8 +200,8 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>NONE</td>
 </tr>
 <tr>
-<td class="label">O_tmds_data_p[0]</td>
-<td>O_tmds_data_n[0]</td>
+<td class="label">tmds_d_p_0[0]</td>
+<td>tmds_d_n_0[0]</td>
 <td>J14/4</td>
 <td>Y</td>
 <td>out</td>
@@ -222,8 +222,8 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>NONE</td>
 </tr>
 <tr>
-<td class="label">O_tmds_data_p[1]</td>
-<td>O_tmds_data_n[1]</td>
+<td class="label">tmds_d_p_0[1]</td>
+<td>tmds_d_n_0[1]</td>
 <td>J15/4</td>
 <td>Y</td>
 <td>out</td>
@@ -244,8 +244,8 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>NONE</td>
 </tr>
 <tr>
-<td class="label">O_tmds_data_p[2]</td>
-<td>O_tmds_data_n[2]</td>
+<td class="label">tmds_d_p_0[2]</td>
+<td>tmds_d_n_0[2]</td>
 <td>K17/5</td>
 <td>Y</td>
 <td>out</td>
@@ -266,8 +266,8 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>NONE</td>
 </tr>
 <tr>
-<td class="label">O_tmds_data_n[0]</td>
-<td>O_tmds_data_p[0]</td>
+<td class="label">tmds_d_n_0[0]</td>
+<td>tmds_d_p_0[0]</td>
 <td>H14/4</td>
 <td>Y</td>
 <td>out</td>
@@ -288,8 +288,8 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>NONE</td>
 </tr>
 <tr>
-<td class="label">O_tmds_data_n[1]</td>
-<td>O_tmds_data_p[1]</td>
+<td class="label">tmds_d_n_0[1]</td>
+<td>tmds_d_p_0[1]</td>
 <td>H15/4</td>
 <td>Y</td>
 <td>out</td>
@@ -310,8 +310,8 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>NONE</td>
 </tr>
 <tr>
-<td class="label">O_tmds_data_n[2]</td>
-<td>O_tmds_data_p[2]</td>
+<td class="label">tmds_d_n_0[2]</td>
+<td>tmds_d_p_0[2]</td>
 <td>J17/5</td>
 <td>Y</td>
 <td>out</td>
@@ -2357,7 +2357,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">AA13/9</td>
-<td>rst_n</td>
+<td>sys_rst_n</td>
 <td>in</td>
 <td>IOB54[B]</td>
 <td>-</td>
@@ -3477,7 +3477,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">V22/7</td>
-<td>clk_27m</td>
+<td>sys_clk</td>
 <td>in</td>
 <td>IOB117[B]</td>
 <td>EMCCLK</td>
@@ -5337,7 +5337,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">J15/4</td>
-<td>O_tmds_data_p[1]</td>
+<td>tmds_d_p_0[1]</td>
 <td>out</td>
 <td>IOR22[A]</td>
 <td>-</td>
@@ -5357,7 +5357,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">H15/4</td>
-<td>O_tmds_data_n[1]</td>
+<td>tmds_d_n_0[1]</td>
 <td>out</td>
 <td>IOR22[B]</td>
 <td>-</td>
@@ -5377,7 +5377,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">G15/4</td>
-<td>O_tmds_clk_p</td>
+<td>tmds_clk_p_0</td>
 <td>out</td>
 <td>IOR24[A]</td>
 <td>-</td>
@@ -5397,7 +5397,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">G16/4</td>
-<td>O_tmds_clk_n</td>
+<td>tmds_clk_n_0</td>
 <td>out</td>
 <td>IOR24[B]</td>
 <td>-</td>
@@ -5417,7 +5417,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">J14/4</td>
-<td>O_tmds_data_p[0]</td>
+<td>tmds_d_p_0[0]</td>
 <td>out</td>
 <td>IOR26[A]</td>
 <td>-</td>
@@ -5437,7 +5437,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">H14/4</td>
-<td>O_tmds_data_n[0]</td>
+<td>tmds_d_n_0[0]</td>
 <td>out</td>
 <td>IOR26[B]</td>
 <td>-</td>
@@ -5617,7 +5617,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">K17/5</td>
-<td>O_tmds_data_p[2]</td>
+<td>tmds_d_p_0[2]</td>
 <td>out</td>
 <td>IOR39[A]</td>
 <td>RPLL0_T_IN0/RPLL0_T_FB1</td>
@@ -5637,7 +5637,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">J17/5</td>
-<td>O_tmds_data_n[2]</td>
+<td>tmds_d_n_0[2]</td>
 <td>out</td>
 <td>IOR39[B]</td>
 <td>RPLL0_C_IN0/RPLL0_C_FB1</td>
